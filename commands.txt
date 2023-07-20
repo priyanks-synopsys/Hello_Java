@@ -1,0 +1,3 @@
+cov-build --dir idir --fs-capture-search . mvn -B package -DskipTests
+cov-analyze --dir idir --strip-path `pwd` --all --webapp-security --enable-audit-mode
+cov-commit-defects --dir idir --url https://url.com --stream HVP_Hello_Java --user <username> --password <password>
