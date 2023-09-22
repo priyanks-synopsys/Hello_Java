@@ -1,5 +1,5 @@
-# example workflow for Coverity scans (CNC only) using the Bridge CLI
-name: cnc-bridge-cli
+# example workflow for Coverity scans (local analysis with full client) using the Bridge CLI
+name: coverity-bridge-cli
 on:
   push:
     branches: [ main, master, develop, stage, release ]
@@ -9,6 +9,10 @@ on:
 jobs:
   coverity:
     runs-on: ubuntu-latest
+    env:
+      BRIDGE_COVERITY_LOCAL: true
+      # uncomment for a preinstalled analysis toolkit
+      #BRIDGE_COVERITY_INSTALL_DIRECTORY: /opt/coverity/analysis/2023.6.0
     steps:
     - name: Checkout Source
       uses: actions/checkout@v3
