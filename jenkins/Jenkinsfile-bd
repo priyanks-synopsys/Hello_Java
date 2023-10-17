@@ -6,7 +6,8 @@ pipeline {
         // production branches on which we want security reports
         PRODUCTION = "${env.BRANCH_NAME ==~ /^(stage|release)$/ ? 'true' : 'false'}"
         // full scan on pushes to important branches
-        FULLSCAN = "${env.BRANCH_NAME ==~ /^(main|master|develop|stage|release)$/ ? 'true' : 'false'}"
+        // FULLSCAN = "${env.BRANCH_NAME ==~ /^(main|master|develop|stage|release)$/ ? 'true' : 'false'}"
+        FULLSCAN = 'true'
         // PR scan on pulll requests to important branches
         PRSCAN = "${env.CHANGE_TARGET ==~ /^(main|master|develop|stage|release)$/ ? 'true' : 'false'}"
         // extract REPO_NAME from GIT_URL
