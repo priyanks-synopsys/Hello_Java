@@ -18,6 +18,7 @@ pipeline {
     tools {
         maven 'maven-3.9'
         jdk 'openjdk-17'
+        gradle 'gradle-7.6.3'
     }
     stages {
         stage('Build') {
