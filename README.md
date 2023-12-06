@@ -1,6 +1,6 @@
 # hello-java
 
-Test  - A simple hello world Java app with some coding errors for demoing SIG product integrations with various CI systems.
+Test H/1 * * * *  schedule added - A simple hello world Java app with some coding errors for demoing SIG product integrations with various CI systems.
 
 Build Commands
 - [pom.xml](pom.xml) - mvn clean compile
