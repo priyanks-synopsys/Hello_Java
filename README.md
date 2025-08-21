@@ -1,6 +1,6 @@
 # hello-java
 
-github_webhook_scm - A simple hello world Java app with some coding errors for demoing SIG product integrations with various CI systems.
+github_webhook_scm - A simple hello world Java app with many coding errors for demoing SIG product integrations with various CI systems.
 
 Build Commands
 - [pom.xml](pom.xml) - mvn clean compile
